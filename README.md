@@ -18,7 +18,6 @@ A collection of **reusable, customizable React UI components** designed for scal
 ```
 src/
 └── components/
-    ├── ui/
     │   ├── Button.jsx
     │   ├── Input.jsx
     │   ├── Card.jsx
@@ -221,14 +220,14 @@ Usage in components: `className={cn('p-4', isActive && 'bg-blue-500')}`
 Create `src/components/ui/index.js` to centralize exports:
 
 ```js
-export { default as Button } from './Button';
-export { default as Input } from './Input';
-export { default as Card } from './Card';
-export { default as Modal } from './Modal';
-export { default as Alert } from './Alert';
+export { default as Button } from './button';
+export { default as Input } from './input';
+export { default as Card } from './card';
+export { default as Modal } from './modal';
+export { default as Alert } from './alert';
 ```
 
-Then import from `@/components/ui`.
+Then import from `@/components`.
 
 ---
 
@@ -238,7 +237,7 @@ Create a quick demo page to test components:
 
 ```jsx
 import { useState } from 'react';
-import { Button, Input, Card, Modal, Alert } from '@/components/ui';
+import { Button, Input, Card, Modal, Alert } from '@/components';
 
 export default function Demo() {
   const [show, setShow] = useState(false);
