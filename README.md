@@ -1,6 +1,10 @@
 # Task #5: The Reusable Components Factory
 
 ## at reusable-components branch
+The implementation for Task #5 is available on a separate branch.  
+Click below to view the source code and explanation:
+
+[🔀 View the reusable-components branch](https://github.com/Ahmed-RS-22/components/tree/reusable-components)
 
 ---
 
